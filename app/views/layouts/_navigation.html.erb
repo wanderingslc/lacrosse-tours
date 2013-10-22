@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    
+      
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to "Lacrosse Tours", root_path, class: "navbar-brand" %>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar">
+    <ul class="nav navbar-nav">
+      <li><%= link_to t(:home), root_path %></li>
+      <li><%= link_to t(:bus), bus_path %></li>
+      <li><%= link_to t(:itinerary), itinerary_path %></li>
+      <li><%= link_to t(:tour), tour_path %></li>
+      <li><%= link_to t(:pricing), pricing_path %></li>
+      <li><%= link_to t(:stadium), stadium_path %></li>
+      <li><%= link_to t(:about), about_path %></li>
+      <li><%= link_to t(:contact), contact_path %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
