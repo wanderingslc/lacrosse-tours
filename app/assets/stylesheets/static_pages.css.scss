@@ -1,8 +1,36 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.bus {
-  .bus-main{
-    
+body {
+  padding-top:5em;
+}
+//blanket container for all pages. be careful what goes here.
+.container{
+  ul{
+    li{
+      list-style: none;
+    }
   }
+}
+
+#bus {
+  img {
+    width:100%;
+  }
+  #bus-main{
+    // background-image: image-url("bus_tall.jpg");
+    // background-repeat:no-repeat;
+  }
+}
+#home{
+  div {
+    div {
+      img {
+        width:100%;
+      }
+    }
+  }
+}
+#warning {
+  color:red;
 }
