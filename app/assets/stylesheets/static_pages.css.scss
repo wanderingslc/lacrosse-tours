@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   padding-top:5em;
+  font-family: droid-sans, sans-serif;
+  font-size:16px;
+  background-image: url('textured_paper.png');
 }
 //blanket container for all pages. be careful what goes here.
 .container{
