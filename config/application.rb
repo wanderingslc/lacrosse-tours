@@ -60,5 +60,18 @@ module LacrosseTours
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.action_mailer.smtp_settings = {
+        :address        =>"smtp.gmail.com",
+        :port           => 587,
+        :domain         =>"yourdomain.dev",
+        :user_name      =>"from@yourdomain.dev",
+        :password       =>"super-secure-password",
+        :authentication =>:plain,
+        :enable_starttls_auto =>true
+
+    }
+    config.action_mailer.default_url_options = {
+        :host => "yourdomain.dev"
+    }
   end
 end

@@ -1,34 +1,36 @@
-<div id="home">
+<div id="home" class="container">
+
   <div class= "col-md-3 col-sm-3 col-xs-6 pull-left">
     <div class="container">
-      <p><%= image_tag ('SplitDodge_Logo_2_medium.png') %></p>
-      <p><%= image_tag ("side_bw_w_color.jpg") %></p>
+      <p><%= image_tag ('SplitDodge_logo_only.png') %></p><br>
+     
+      <%=render partial: "picture_carousel"  %> 
     </div>
   </div>
-    
-  <div class="col-md-6 col-xs-12 ">
-    <h1>Split Dodge Lacrosse Tours  </h1>
-    <p>SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game experience.  Tours travel by the "lacrosse fun bus" to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
+  <div id="right-content">  
+    <div class="col-md-6 col-xs-12 ">
+      <p><%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT' %> <p><br>
+      <p class="lead">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game experience.</p><p>  Tours travel by the "lacrosse fun bus" to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
 
-    <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the stadium in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown To have access to its unique qualities.</p>
+      <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the stadium in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown To have access to its unique qualities.</p>
 
-  </div>
-
-  <div class=" col-md-6 col-xs-12">
-      <h3>Scheduled Tours</h3>
-      <ul>
-        <li>January 18-19: Colorado Mammoth vs. Buffalo Bandits in Denver CO </li>
-      </ul>
-      <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path %></h4>
-      <ul>
-        <li>February 1-2 Colorado Mammoth vs Minnesota Swarm</li>
-        <li>March 1-2  Colorado Mammoth vs. Rochester Knight Hawks</li>
-        <li>March 24-25 Colorado Mammoth vs. Philadelphia Wings</li>
-        <li>March ?? Denver University schedule not currently out</li>
-        <li>April-August Colorado Outlaws schedule not currently out</li>
-      </ul>
     </div>
 
+    <div class=" col-md-6 col-xs-12">
+        <h3>Scheduled Tours</h3>
+        <ul>
+          <li>January 18-19: Colorado Mammoth vs. Buffalo Bandits in Denver CO </li>
+        </ul>
+        <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path %></h4>
+        <ul>
+          <li>February 1-2 Colorado Mammoth vs Minnesota Swarm</li>
+          <li>March 1-2  Colorado Mammoth vs. Rochester Knight Hawks</li>
+          <li>March 24-25 Colorado Mammoth vs. Philadelphia Wings</li>
+          <li>March ?? Denver University schedule not currently out</li>
+          <li>April-August Colorado Outlaws schedule not currently out</li>
+        </ul>
+      </div>
+  </div>
   
 
     
