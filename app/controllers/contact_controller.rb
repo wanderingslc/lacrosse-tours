@@ -1,7 +1,7 @@
 class ContactController < ApplicationController
 
-  def new
-    @message = Message.new
+  def new 
+    @message = Message.new 
   end
 
   def create

@@ -1,26 +1,36 @@
+<div class="container">
+<div class="col-xs-12 container">
+    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
+    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
+  </div>
+<br>
 <%= form_for @message, :url => contact_path do |form| %>
-  <fieldset class="fields">
-    <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name %>
+  <fieldset class="fields container">
+    <div class="field container ">
+      <%= form.label :name, class: "col-md-1" %>
+      <%= form.text_field :name, class: "col-md-6" %>
     </div>
-    
-    <div class="field">
-      <%= form.label :email %>
-      <%= form.text_field :email %>
+    <br>
+    <div class="field container">
+      <%= form.label :email, class: "col-md-1" %>
+      <%= form.text_field :email, class: "col-md-6" %>
     </div>
-    <div class="field">
-      <%= form.label :subject %>
-      <%= form.text_field :subject %>
+    <br>
+    <div class="field container ">
+      <%= form.label :subject, class: "col-md-1" %>
+      <%= form.text_field :subject, class: "col-md-6" %>
     </div>
-    
-    <div class="field">
-      <%= form.label :body %>
-      <%= form.text_area :body %>
+    <br>
+    <div class="field container ">
+      <%= form.label :body, class: "col-md-1" %>
+      <%= form.text_area :body, class: "col-md-6" %>
     </div>
   </fieldset>
-  
+  <br>
   <fieldset class="actions">
-    <%= form.submit "Send" %>
+    <%= form.submit "Send", class: "col-md-4 center-block col-md-offset-2" %>
   </fieldset>
+  <br>
 <% end %>
+<br>
+</div>
