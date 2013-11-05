@@ -21,6 +21,8 @@ LacrosseTours::Application.routes.draw do
 
   get "contact", to: "static_pages#contact", as: :contact
 
+  get "sign_up", to: "static_pages#sign_up", as: :sign_up
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

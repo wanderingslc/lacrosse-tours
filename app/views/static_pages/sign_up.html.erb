@@ -1,0 +1,58 @@
+<div id="home" class="sign_up">
+ 
+  <div class="col-xs-12 container">
+    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
+    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
+  </div>
+  <br>
+  <div class= "col-md-3 col-sm-3 col-xs-6 pull-left clearfix">
+    <div class="container">
+       <%=render partial: "picture_carousel"  %> 
+    </div>
+  </div>
+  <div id="right-content">  
+    <div class="col-md-6 col-xs-12 ">
+    Name first and last
+Teams played for
+Age
+M/F this is for prizes and clinics
+E-mail address
+Number of seasons played 
+How found tour
+Who did you sign up with, for bus assignments
+Desired room share Prather
+Chaperone name-if chaperone put own name
+US lacrosse number
+Phone number emergency number
+Insurance info
+Clinic participation Y/N  
+      <%= form_tag  do %>
+        <div>
+          <%= form.label :first_name  %>
+          <%= form.text_field :first_name %>
+        </div>
+        <div>
+          <%= form.label :last_name %>
+          <%= form.text_field :last_name %>
+        </div>
+        <div>
+          <%= form.label :teams_played_for %>
+          <%= form.text_field :teams_played_for %>
+        </div>
+        <div>
+          <%= form.label :age %>
+          <%= form.text_field %>
+        </div>
+        <div>
+
+         </div>
+      <% end %>
+
+    
+        
+  </div>
+  
+
+    
+  
+</div>
