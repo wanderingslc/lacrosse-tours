@@ -9,7 +9,23 @@ body {
  
 
 }
+
 //blanket container for all pages. be careful what goes here.
+.carousel .carousel-control {
+  visibility: hidden;
+
+}
+
+
+#myCarousel {
+  div{
+    img{
+      width:100%;
+      height:35em;
+    }
+  }
+}
+
 .container{
   ul{
     li{
@@ -19,58 +35,31 @@ body {
 }
 
 #bus {
-  img {
-    width:100%;
-  }
-  #bus-main{
-    // background-image: image-url("bus_tall.jpg");
-    // background-repeat:no-repeat;
-  }
+  
+ 
 }
 #home{
   
-
-  div {
-
-    div {
-      img {
-        width:100%;
-      }
-    }
-    
-  }
   
 }
 
 #itinerary {
-  img{
-    width: 100%;
-  }
+  
 }
 #pricing {
-  img{
-    width:100%;
-  }
+  
 }
 #stadium{
-  img{
-    width:100%;
-  }
+  
 }
 #tour {
-  img{
-    width:100%;
-  }
+  
 }
 #about{
-  img{
-    width:100%;
-  }
+
 }
 #contact{
-  img {
-    width:100%;
-  }
+  
 }
 #warning {
   font-size: 75%;

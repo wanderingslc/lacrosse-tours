@@ -2,7 +2,7 @@ class NotificationsMailer < ActionMailer::Base
   
 
   default :from => "noreply@splitdodgetours.com"
-  default :to => "lacrossetoursslc@gmail.com"
+  default :to => "splitdodgetours@gmail.com"
 
   def new_message(message)
     @message = message

@@ -1,0 +1,96 @@
+<div class="container">
+<div class="col-xs-12 container">
+    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
+    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
+  </div>
+<br>
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields container">
+    <div class="field container ">
+      <%= form.label :first_name, class: "col-md-1" %>
+      <%= form.text_field :first_name, class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :last_name , class: "col-md-1" %>
+      <%= form.text_field :last_name  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :teams_played_for , class: "col-md-1" %>
+      <%= form.text_field :teams_played_for  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :age , class: "col-md-1" %>
+      <%= form.text_field :age  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :m , class: "col-md-1" %>
+      <%= form.radio_button_tag :f  , class: "col-md-6" %>
+      <%= form.label :f %>
+      <%= form.radio_button_tag :f %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :email, class: "col-md-1" %>
+      <%= form.text_field :email, class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :seasons_played , class: "col-md-1" %>
+      <%= form.text_field :seasons_played  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :how_did_you_hear_about_us , class: "col-md-1" %>
+      <%= form.text_field :how_did_you_hear_about_us  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :who_did_you_sign_up_with , class: "col-md-1" %>
+      <%= form.text_field :who_did_you_sign_up_with  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :prefered_room_mate , class: "col-md-1" %>
+      <%= form.text_field :prefered_room_mate  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :chaperone  , class: "col-md-1" %>
+      <%= form.text_field :chaperone  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :us_lacrosse_number , class: "col-md-1" %>
+      <%= form.text_field :us_lacrosse_number  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :primary_contact_number , class: "col-md-1" %>
+      <%= form.text_field :primary_contact_number  , class: "col-md-6" %>
+      <%= form.label :emergency_contact_number %>
+      <%= form.text_field :emergency_contact_number %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :insurance_info , class: "col-md-1" %>
+      <%= form.text_field :insurance_info  , class: "col-md-6" %>
+    </div>
+    <br>
+    <div class="field container">
+      <%= form.label :clinic_participation , class: "col-md-1" %>
+      <%= form.text_field :clinic_participation  , class: "col-md-6" %>
+    </div>
+    <br>
+  </fieldset>
+  <br>
+  <fieldset class="actions">
+    <%= form.submit "Send", class: "col-md-4 center-block col-md-offset-2" %>
+  </fieldset>
+  <br>
+<% end %>
+<br>
+</div>

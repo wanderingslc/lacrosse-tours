@@ -1,13 +1,16 @@
-<div id="bus">
-  <div class="container">
-    <div class="col-md-3 hidden-xs hidden-sm">
-     <p><%= image_tag ('SplitDodge_logo_only.png') %></p><br>
-      
-      <p><%= image_tag ('bus_tall.jpg') %></p>
+<div id="bus" class="container">
+    <div class="col-xs-12 container">
+    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
+    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
+  </div>
+  <br>
+  <div class= "col-md-3 col-sm-3 col-xs-6 hidden-xs hidden-sm pull-left clearfix">
+    <div class="container">
+       <%=render partial: "picture_carousel"  %> 
     </div>
+  </div>
     <div class="col-md-6 col-xs-12 " id="bus-main">
-      <p><%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT' %> <p><br>
-
+      
       <h1>Split Dodge Tours : Fun Bus Activities</h1>
       <p>Denver's a bit of a drive, with us the fun starts before we even leave Salt Lake City!</p>
       <ul>
@@ -24,6 +27,6 @@
         <li>Team bonding</li>
       </ul>
     </div>
-     <h4 id="warning">Note: Not all items listed are guaranteed and are contingent on each unique tour.</h4>
-  </div>
+    
+  
 </div>

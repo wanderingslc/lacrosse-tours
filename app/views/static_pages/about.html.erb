@@ -1,10 +1,17 @@
 <div class="container" id="about">
-  <div class="col-md-3 hidden-xs hidden-sm">
-     <p><%= image_tag ('SplitDodge_logo_only.png') %></p><br>
-      <p><%= image_tag ("side_bw_w_color.jpg") %></p>
+  <div class="col-xs-12 container">
+    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
+    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
+  </div>
+  <br>
+  <div class= "col-md-3 col-sm-3 col-xs-6 hidden-xs hidden-sm pull-left clearfix">
+    <div class="container">
+       <%=render partial: "picture_carousel"  %> 
     </div>
+  </div>
+  
   <div class="col-md-6 col-xs-12">
-    <p><%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT' %> <p><br>
+    
   <h1>About Us : Split Dodge Tours</h1>
     <p>Where to start? Founded by a guy who likes lacrosse, whose kid's play lacrosse, and wanted to organize trips to watch pro games. </p>
   </div>

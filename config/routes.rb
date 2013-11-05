@@ -3,6 +3,8 @@ LacrosseTours::Application.routes.draw do
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
+  # match 'sign_up' => 'sign_up#new', :as => 'sign_up', :via => :get
+  # match 'sign_up' => 'sign_up#create', :as => 'sign_up', :via => :post
   root :to => 'static_pages#home'
 
   #get "static_pages/home"
