@@ -11,14 +11,8 @@ $jumbotron-bg: #FFFFFF;
 }
 
 
-.jumbotron {
-  .container{
-    h1{
-      font-family: kaushan-script, cursive;
-      
-    }
-  }
-}
+$grid-float-breakpoint: 1000px;
+
 
 #homepage-cols{
   div{
@@ -31,4 +25,3 @@ $jumbotron-bg: #FFFFFF;
 }
 
 @import "bootstrap";
-
