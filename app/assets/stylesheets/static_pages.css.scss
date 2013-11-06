@@ -15,17 +15,50 @@ body {
   visibility: hidden;
 
 }
-
-
-#myCarousel {
-  div{
-    img{
-      width:100%;
-      height:35em;
+@media (max-width: 480px) {  
+  #myCarousel{
+    div{
+      img{
+        width:100%;
+        height:20em;
+      }
     }
   }
 }
+@media (min-width: 768px) and (max-width: 991px) { 
+  #myCarousel{
+    div{
+      img{
+        width:100%;
+        height:25em;
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+  #myCarousel{
+    div{
+      img{
+        width:100%;
+        height:30em;
+      }
+    }
+  }
+ }
+@media (min-width: 1200px) { 
+  #myCarousel{
+    div{
+      img{
+        width:100%;
+        height:35em;
+      }
+    }
+  }
+ }
 
+
+#myCarousel {
+}
 .container{
   ul{
     li{
@@ -33,16 +66,10 @@ body {
     }
   }
 }
-
 #bus {
-  
- 
 }
-#home{
-  
-  
+#home{ 
 }
-
 #itinerary {
   
 }
