@@ -12,13 +12,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "Split Dodge Tours", root_path, class: "navbar-brand" %>
+        <%= link_to "Home", root_path, class: "navbar-brand hidden-lg hidden-md " %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar" >
-        <ul class="nav navbar-nav">
-          
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t(:home), root_path, class: 'hidden-sm hidden-xs' %></li>
           <li><%= link_to t(:bus_activities), bus_path %></li>
           <li><%= link_to t(:itinerary), itinerary_path %></li>
           <li><%= link_to t(:tour), tour_path %></li>

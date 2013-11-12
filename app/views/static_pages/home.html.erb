@@ -1,25 +1,22 @@
 <div id="home" class="container">
  
-  <div class="col-xs-12 container">
-    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-md-3 col-xs-4' %>
-    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-md-6 col-xs-8' %>
-  </div>
   <br>
-  <div class= "col-md-3 col-sm-3 col-xs-6 pull-left clearfix">
-    <div class="container">
-       <%=render partial: "picture_carousel"  %> 
+  <div class= "left-column">
+    <div class="container ">
+       <%=render partial: "picture_carousel"  %>  
     </div>
   </div>
-  <div id="right-content">  
-    <div class="col-md-6 col-xs-12 ">
+  <div id="right-content" class="col-md-offset-3">   
+    <div class="col-md-6 col-xs-12 pull-right">
       
-      <p class="lead">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game experience.</p><p>  Tours travel by the "lacrosse fun bus" to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
+      
+      <p class="lead">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game.</p><p>  Tours travel by the <%= link_to "lacrosse fun bus", bus_path %> to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
 
-      <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the stadium in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown To have access to its unique qualities.</p>
-      <p><%= link_to "Sign up", sign_up_path %></p>
+      <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the stadium in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown to have access to its unique qualities.</p>
+      <p><%= button_to "Sign up now!", sign_up_path, class: 'btn btn-signup' %></p>
     </div>
 
-    <div class=" col-md-6 col-xs-12">
+    <div class=" col-md-6 col-xs-12 pull-right">
         <h3>Scheduled Tours</h3>
         <ul>
           <li>January 18-19: Colorado Mammoth vs. Buffalo Bandits in Denver CO </li>
@@ -36,6 +33,9 @@
   </div>
   
 
-    
   
 </div>
+<div class=" container">  
+  <%= render partial: "footer" %>
+</div>
+

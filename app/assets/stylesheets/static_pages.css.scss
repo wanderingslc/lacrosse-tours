@@ -55,9 +55,30 @@ body {
     }
   }
  }
-
-
+ .left-column {
+  float:left;
+  clear:left;
+ }
+#right-content {
+  float:right;
+}
+#footer {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
 #myCarousel {
+}
+#logo {
+  img{
+    width:100%;
+  }
+}
+.btn-signup {
+  background-color:#6497CB;
+  -moz-border-radius: 15px;
+  border-radius:15px;
+  font-size: 1.2em;
 }
 .container{
   ul{
