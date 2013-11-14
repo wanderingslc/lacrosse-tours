@@ -25,4 +25,8 @@ class StaticPagesController < ApplicationController
 
   def sign_up
   end
+
+  def googlee78ed3070a14e045
+  end
+  
 end

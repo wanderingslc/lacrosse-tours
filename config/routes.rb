@@ -25,6 +25,8 @@ LacrosseTours::Application.routes.draw do
 
   get "sign_up", to: "static_pages#sign_up", as: :sign_up
 
+  get "googlee78ed3070a14e045", to: "static_pages#googlee78ed3070a14e045", as: :googlee78ed3070a14e045
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
