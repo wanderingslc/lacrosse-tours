@@ -9,10 +9,12 @@
   <script src="//use.edgefonts.net/droid-sans.js"></script>
 </head>
 <body>
+  <div id='background-img' data-imgpath="<%= asset_path('lacrosse_stick_head_color_medium_quality.jpg') %>" ></div>
   <div class="container">
   <%= render 'layouts/navigation' %>
   
     <%= yield %>
-  </div>  
+  </div> 
+  <%= render partial: 'static_pages/footer' %>
 </body>
 </html>

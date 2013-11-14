@@ -1,13 +1,17 @@
 <div id="home" class="container">
  
   <br>
-  <div class= "left-column">
+  <div class= "left-column col-md-3 hidden-xs hidden-sm">
     <div class="container ">
        <%=render partial: "picture_carousel"  %>  
     </div>
   </div>
-  <div id="right-content" class="col-md-offset-3">   
-    <div class="col-md-6 col-xs-12 pull-right">
+  <div id="right-content" class="col-md-offset-3 ">  
+    <div class="container col-md-8">
+      <h1>Header</h1>
+    </div> 
+    
+    <div class="col-md-7 col-xs-12 ">
       
       
       <p class="lead">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game.</p><p>  Tours travel by the <%= link_to "lacrosse fun bus", bus_path %> to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
@@ -16,7 +20,7 @@
       <p><%= button_to "Sign up now!", sign_up_path, class: 'btn btn-signup' %></p>
     </div>
 
-    <div class=" col-md-6 col-xs-12 pull-right">
+    <div class=" col-md-7 col-xs-12 " style="border-top:thin solid #6497CB;">
         <h3>Scheduled Tours</h3>
         <ul>
           <li>January 18-19: Colorado Mammoth vs. Buffalo Bandits in Denver CO </li>
@@ -35,7 +39,8 @@
 
   
 </div>
-<div class=" container">  
-  <%= render partial: "footer" %>
-</div>
+<script>
+  // console.debug('<%= asset_path('lacrosse_stick_head_color_medium_quality.jpg') %>');
+</script>
+
 
