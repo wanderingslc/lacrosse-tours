@@ -15,3 +15,9 @@
 //= require_tree .
 //= require bootstrap
 //= require jquery.backstretch
+
+$(document).ready(function(){
+  var bg_image_div = $('#background-img');
+  // console.debug();
+  $.backstretch(bg_image_div.data('imgpath'));
+});
