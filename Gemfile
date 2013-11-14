@@ -13,6 +13,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'figaro'
 gem 'backstretch-rails'
+gem 'sitemap'
 
 group :development do
   gem 'powder'
