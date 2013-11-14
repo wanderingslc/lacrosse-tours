@@ -9,7 +9,9 @@ body {
   //background-image: url('textured_paper.png');
   background-image: url('lacrosse_stick_head_color_medium_quality.jpg') ;
   background-repeat: no-repeat;
-
+  ul {
+    // list-style-image:url('crossed_lacrosse_sticks_for_li.png');
+  }
 
 }
 
@@ -18,46 +20,46 @@ body {
   visibility: hidden;
 
 }
-// @media (max-width: 480px) {  
-//   #myCarousel{
-//     div{
-//       img{
-//         width:100%;
-//         height:20em;
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 768px) and (max-width: 991px) { 
-//   #myCarousel{
-//     .item{
-//       img{
-//         width:100%;
-//         height:25em;
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 992px) and (max-width: 1199px) { 
-//   #myCarousel{
-//     .item{
-//       img{
-//         width:100%;
-//         height:30em;
-//       }
-//     }
-//   }
-//  }
-// @media (min-width: 1200px) { 
-//   #myCarousel{
-//     .item{
-//       img{
-//         width:100%;
-//         height:35em;
-//       }
-//     }
-//   }
-//  }
+@media (max-width: 480px) {  
+  #myCarousel{
+    div{
+      img{
+        width:100%;
+        height:20em;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+  #myCarousel{
+    .item{
+      img{
+        width:100%;
+        height:25em;
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+  #myCarousel{
+    .item{
+      img{
+        width:100%;
+        height:30em;
+      }
+    }
+  }
+ }
+@media (min-width: 1200px) { 
+  #myCarousel{
+    .item{
+      img{
+        width:100%;
+        height:35em;
+      }
+    }
+  }
+ }
  .left-column {
   
  }
@@ -86,6 +88,7 @@ body {
   }
 }
 .btn-signup {
+  color:white;
   background-color:#6497CB;
   -moz-border-radius: 15px;
   border-radius:15px;
@@ -96,13 +99,16 @@ body {
 .container{
   ul{
     li{
-      list-style: none;
+       list-style: none;
     }
   }
 }
 #bus {
 }
 #home{ 
+  #home_page_schedule {
+    border-top:thin solid #6497CB;
+  }
 }
 #itinerary {
   
@@ -125,6 +131,21 @@ body {
 #warning {
   font-size: 75%;
   color:red;
+}
+#home_h1 {
+  
+
+}
+.link_outline {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.seperator_line {
+  border-top:thin solid #6497CB;
+  
 }
 // #navigation {
 //   width:80%;

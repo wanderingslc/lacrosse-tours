@@ -1,9 +1,6 @@
 <div class="container" id="about">
-  <div class="col-xs-12 container">
-    <%= image_tag ('SplitDodge_logo_only.png'), class: 'col-xs-3' %>
-    <%= image_tag 'SplitDodge_logo_text_only.png', alt: 'Split Dodge Tours Salt Lake City UT', class: 'col-xs-6' %>
-  </div>
-  <br>
+  
+  
   <div class= "col-md-3 col-sm-3 col-xs-6  pull-left clearfix">
     <div class="container">
        <%=render partial: "picture_carousel"  %> 
@@ -15,12 +12,12 @@
   <h1>About Us : Split Dodge Tours</h1>
     <p>Where to start? Founded by a guy who likes lacrosse, whose kid's play lacrosse, and wanted to organize trips to watch pro games. </p>
   </div>
-  <div class=" col-md-5 col-xs-12 pull-left">
-    <h3>About Split Dodge Tours</h3>
+  <div class=" col-md-5 col-xs-12 pull-left seperator_line">
+    <h3>Join us on a trip!</h3>
     <p>SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game experience.  Tours travel by the "lacrosse fun bus" to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
 
-    <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the stadium in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown To have access to its unique qualities.</p>
-     <h4 id="warning">Note: Not all items listed are guaranteed and are contingent on each unique tour.</h4>
+    <p>At the destination you will have events such as lacrosse clinics, autograph sessions, access to local retail stores and back of house access to national equipment suppliers. At the <%= link_to 'stadium', stadium_path, class: 'link_outline', rel: 'canonical' %>  in addition to VIP treatment you will meet with player and have field access dinner and premium seating. While staying close to the stadium in downtown To have access to its unique qualities.</p>
+     <h4 id="warning" class="link_outline">Note: Not all items listed are guaranteed and are contingent on each unique tour.</h4>
   </div>
 
 </div>
