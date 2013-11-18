@@ -157,6 +157,13 @@ body {
 .twitter-feed {
   padding-top:1em;
 }
+#shout_out_home{
+  text-shadow :
+  -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 // #navigation {
 //   width:80%;
 //   float:right;
