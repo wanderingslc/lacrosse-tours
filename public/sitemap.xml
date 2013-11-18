@@ -5,6 +5,14 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>http://splitdodgetours.herokuapp.com/stadium</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://splitdodgetours.herokuapp.com/itinerary</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://splitdodgetours.herokuapp.com/about</loc>
     <priority>0.5</priority>
   </url>
