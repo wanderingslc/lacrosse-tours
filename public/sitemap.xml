@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://mywebsite.com/</loc>
+    <loc>http://splitdodgetours.herokuapp.com</loc>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://mywebsite.com/about</loc>
+    <loc>http://splitdodgetours.herokuapp.com/about</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://mywebsite.com/contact</loc>
+    <loc>http://splitdodgetours.herokuapp.com/contact</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
