@@ -8,7 +8,7 @@ if defined?(Bundler)
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
-
+ 
 module LacrosseTours
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -64,7 +64,7 @@ module LacrosseTours
     config.action_mailer.smtp_settings = {
         :address        =>"smtp.gmail.com",
         :port           => 587,
-        :domain         =>"localhost:3000",
+        :domain         =>"splitdodgetours.com",
         :user_name      =>ENV["GMAIL_USERNAME"],
         :password       =>ENV["GMAIL_PASSWORD"],
         :authentication =>:plain,
