@@ -67,7 +67,7 @@ module LacrosseTours
         :domain         =>"splitdodgetours.com",
         :user_name      =>ENV["GMAIL_USERNAME"],
         :password       =>ENV["GMAIL_PASSWORD"],
-        :authentication =>:plain,
+        :authentication =>'plain',
         :enable_starttls_auto =>true
 
     }
