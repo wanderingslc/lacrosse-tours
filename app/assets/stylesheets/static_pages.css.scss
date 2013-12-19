@@ -14,11 +14,20 @@ body {
   }
 
 }
-
+ 
 //blanket container for all pages. be careful what goes here.
 .carousel .carousel-control {
   visibility: hidden;
 
+}
+
+.social {
+  li {
+    padding:5px;
+    float:left;
+    clear:left;
+    margin-left: 3px;
+  }
 }
 @media (max-width: 480px) {  
   #myCarousel{

@@ -14,6 +14,7 @@ gem 'devise'
 gem 'figaro'
 gem 'backstretch-rails'
 gem 'sitemap'
+gem 'font-awesome-sass'
 
 group :development do
   gem 'powder'
