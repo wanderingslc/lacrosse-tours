@@ -12,19 +12,24 @@
      <p><%= image_tag ('split_dodge_logo_long.png'), class: 'img-responsive' %></p>
   </div>
   <div id="right-content" class="col-md-offset-3 ">  
-    <div class="container col-md-8 ">
-      <h1 id="home_h1">Come See Professional Lacrosse!</h1>
+    <div class="container col-md-8 col-xs-8">
+      <h1 id="home_h1" class="hidden-xs hidden-sm">Come See Professional Lacrosse!</h1>
+      <h2 id="home_h1" class="hidden-md hidden-lg">Come see Professional Lacrosse! </h2>
     </div> 
     
     <div class="col-md-7 col-xs-12 ">
-      <p class="lead seperator_line">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game.</p><p class="seperator_line">  Tours travel by the <%= link_to "lacrosse fun bus", bus_path, class: 'link_outline', rel: 'canonical'  %> to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
+      <p class="lead seperator_line">SplitDodgeTours has created a lacrosse based immersion experience centered around a professional lacrosse game.</p>
+
+      <p class="seperator_line">  Tours travel by the <%= link_to "lacrosse fun bus", bus_path, class: 'link_outline', rel: 'canonical'  %> to Denver from SLC. On the trip to and from riders are treated to games, lacrosse gear giveaways, videos and demonstrations.</p>
 
       <p>At the destination you will have <%= link_to 'events', itinerary_path, class: 'link_outline', rel: 'canonical' %> such as lacrosse clinics, autograph sessions, access to local retail <%= link_to 'stores', tour_path, class: 'link_outline', rel: 'canonical' %> and back of house access to national equipment suppliers. At the <%= link_to 'stadium', stadium_path, class: 'link_outline', rel: 'canonical' %> in addition to VIP treatment you will meet with player's and have field access dinner and premium seating. While staying close to the stadium in downtown to have access to its unique qualities, all for an affordable <%= link_to "price", pricing_path, class: 'link_outline', rel: 'canonical' %>.</p>
-      <p>Questions? Please <%= link_to "get in touch", contact_path, class: 'link_outline', rel: 'canonical' %>or you can find out more about who's behind the tour <%= link_to "here", about_path, class: 'link_outline', rel: 'canonical' %>.</p> 
+      <p>Questions? Please <%= link_to "get in touch", contact_path, class: 'link_outline', rel: 'canonical' %>or you can find out more about who's behind the tour <%= link_to "here", about_path, class: 'link_outline', rel: 'canonical' %> or read about us on <%= link_to "Utah Lacrosse News", "http://www.utahlacrossenews.com/2013/11/joe-prudden-founds-split-dodge-tours/#more-23155", class: 'link_outline', rel: 'canonical' %> !</p> 
       <p><%= link_to "Sign up now!", contact_path, class: 'btn btn-signup', rel: 'canonical'%></p>
     </div>
 
     <div class=" col-md-7 col-xs-12 " id="home_page_schedule" >
+
+      
         <h3>Scheduled Tours</h3>
         <ul>
           <li><%= link_to 'January 18-19: Colorado Mammoth vs. Buffalo Bandits in Denver CO', itinerary_path, class: 'link_outline', rel: 'canonical' %> </li>
