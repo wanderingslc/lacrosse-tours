@@ -6,4 +6,6 @@ lacrosse markets yet.
 will be added instead of using a larger CMS framework that's simply overkill
 for what the client needed. 
 
+    Wufoo sign up form maintained by client.
+
 
