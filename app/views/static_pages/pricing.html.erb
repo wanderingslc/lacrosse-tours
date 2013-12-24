@@ -2,10 +2,13 @@
 <% content_for :description, 'Prices for our fun bus lacrosse trips' %>
 <div class="container" id="pricing">
   
-  <div class= "col-md-3 col-sm-3 col-xs-6  pull-left clearfix">
-    <div class="container">
-       <%=render partial: "picture_carousel"  %> 
+  <div class= "left-column col-md-3 hidden-xs hidden-sm">
+    <div class="container ">
+       <%=render partial: "picture_carousel"  %>  
     </div>
+  </div>
+  <div class="hidden-md hidden-lg ">
+     <p><%= image_tag ('split_dodge_logo_long.png'), class: 'img-responsive' %></p>
   </div>
 
 
