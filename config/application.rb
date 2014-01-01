@@ -74,5 +74,9 @@ module LacrosseTours
     config.action_mailer.default_url_options = {
         :host => "localhost.localdomain"
     }
+
+    if Rails.env == "production"
+        config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-46795015-1")
+    end
   end
 end

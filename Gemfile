@@ -16,6 +16,10 @@ gem 'backstretch-rails'
 gem 'sitemap'
 gem 'font-awesome-sass'
 
+group :production do 
+  gem 'rack-google_analytics', :require => "rack/google_analytics"  
+end
+
 group :development do
   gem 'powder'
   gem 'pry-rails'
