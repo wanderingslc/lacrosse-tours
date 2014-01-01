@@ -15,10 +15,8 @@ gem 'figaro'
 gem 'backstretch-rails'
 gem 'sitemap'
 gem 'font-awesome-sass'
+gem 'rails_serve_static_assets', group: [:production] 
 
-group :production do 
-  gem 'rack-google_analytics', :require => "rack/google_analytics"  
-end
 
 group :development do
   gem 'powder'

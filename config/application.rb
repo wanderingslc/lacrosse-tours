@@ -75,8 +75,6 @@ module LacrosseTours
         :host => "localhost.localdomain"
     }
 
-    if Rails.env == "production"
-        config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-46795015-1")
-    end
+    
   end
 end
