@@ -6,12 +6,12 @@ LacrosseTours::Application.routes.draw do
   # match 'sign_up' => 'sign_up#new', :as => 'sign_up', :via => :get
   # match 'sign_up' => 'sign_up#create', :as => 'sign_up', :via => :post
   root :to => 'static_pages#home'
-
+  get "path", to: 'controller#action', as: :name_of_path
   #get "static_pages/home"
 
   get "bus", to:"static_pages#bus", as: :bus
 
-  get "itinerary", to: "static_pages#itinerary", as: :itinerary
+  get "itinerary", to:"static_pages#itinerary", as: :itinerary
 
   get "tour", to: "static_pages#tour", as: :tour
 

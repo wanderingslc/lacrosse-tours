@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   #caches_page :home, :bus, :itinerary, :tour, :pricing, :stadium, :about, :contact, :sign_up
+  layout 'application' 
   def home
   end
 

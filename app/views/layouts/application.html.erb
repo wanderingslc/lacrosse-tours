@@ -14,20 +14,13 @@
 </head>
 <body>
 
-  <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+ 
   <div id='background-img' data-imgpath="<%= asset_path('lacrosse_stick_head_color_medium_quality.jpg') %>" ></div>
   <div class="container">
-  <%= render 'layouts/navigation' %>
-  
-    <%= yield %>
+    <%= render 'layouts/navigation' %>
+    
+      <%= yield %>
   </div> 
-  
+
 </body>
 </html>
