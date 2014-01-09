@@ -1,0 +1,13 @@
+<h1><%= @itinerary.name %></h1>
+
+<dl class="">
+  <%= @itinerary.event_times.each do |event_time| %>
+    <dt><%= event_time.content %><dt>
+      <%= event_time.events.each do |event| %>
+        <dd><%= event.content %></dd>
+      <% end %>
+  <% end %>
+</dl>
+
+<%= link_to 'Edit', edit_itinerary_path(@itineray) %>
+<%= link_to 'Back to Itineraries', itineray_path %>  

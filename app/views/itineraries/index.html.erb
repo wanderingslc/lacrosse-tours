@@ -1,0 +1,10 @@
+<h1>Itinerary</h1>
+
+<% @itineraries.each do |itinerary| %>
+  <div class="article">
+    <h2><%= link_to itinerary.date, itinerary %></h2>
+    <%= pluralize(itinerary.event_times.size, "Event Times") %>
+  </div>
+  <% end %>
+
+  <p><%= link_to 'New Itinerary', new_itinerary_path %></p>
