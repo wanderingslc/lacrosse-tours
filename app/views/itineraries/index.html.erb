@@ -1,10 +1,88 @@
-<h1>Itinerary</h1>
+<% content_for :title, 'Split Dodge Tours Trip Itinerary' %>
+<% content_for :description, 'What makes the fun bus fun on trips from Salt Lake to Denver' %>
 
-<% @itineraries.each do |itinerary| %>
-  <div class="article">
-    <h2><%= link_to itinerary.date, itinerary %></h2>
-    <%= pluralize(itinerary.event_times.size, "Event Times") %>
+<div id="itinerary" class="container" >
+ 
+  <br>
+  <div class= "left-column col-md-3 hidden-xs hidden-sm">
+    <div class="container ">
+       <%=render partial: "static_pages/picture_carousel"  %>  
+    </div>
   </div>
-  <% end %>
+  <div class="hidden-md hidden-lg ">
+     <p><%= image_tag ('split_dodge_logo_long.png'), class: 'img-responsive' %></p>
+  </div>
 
-  <p><%= link_to 'New Itinerary', new_itinerary_path %></p>
+  <div class="col-md-6 col-xs-12">
+    <div>
+      
+      <h1>Itinerary</h1>
+      <h2>This is the editable experimental form</h2>
+      <ul>
+        <li>Lacrosse <%= link_to "fun bus", bus_path, class: 'link_outline', rel: 'canonical' %> transport to and from SLC</li>
+
+        <!-- <li>Retail lacrosse store tour and unique shopping experience</li>
+        <li>Harrow equipment manufacture facility tour and silk screening demonstration</li>
+        <li>Private autograph sessions</li>
+        <li>VIP treatment at stadium</li>
+        <li>Watch professional game from premium seating</li>
+        <li>Accomodations close to the stadium and many downtown attractions.</li>
+        <li>Player Clinics</li>
+        <li>3 Star Hotel</li> -->
+      </ul>
+      <dl class="dl-horizontal">
+
+        <% @itineraries.each do |itinerary| %>
+          <h3><%= itinerary.date %></h3>
+              <%= link_to "Show Itinerary", itinerary %>
+              <p><%= itinerary.description %></p>
+              <% itinerary.activities.each do |activity| %>
+              <dt><%= activity.time %></dt>
+              <dd><%= activity.description %></dd>
+                <% end %>
+        <% end %>  
+         
+        <%= link_to "New Itinerary", new_itinerary_path %>    
+
+       <h3>Saturday January 18th</h3>
+
+        <dt>5:30 - 1:30</dt>
+        <dd>Lacrosse fun bus activities, ride to Denver</dd>
+        <dt>1:30 - 3:00</dt>
+        <dd>Lunch, Store Raffle, Retail Shopping, Player meet-n-greet at <%= link_to "Lacrosse Unlimited", 'http://lacrosseunlimited.com/', class: 'link_outline' %></dd>
+        <dt>3:00 - 4:30</dt>
+        <dd>Lacrosse Mfg. Tour, gear 101, Player meet-n-greet</dd>
+        <dt>4:30 - 5:30</dt>
+        <dd>Hotel Check-in and down time</dd>
+        <dt>5:30 - 6:15</dt>
+        <dd>On field activities at Mammoth Pepsi Center</dd>
+        <dt>6:15 - 7:00</dt>
+        <dd>Dinner and watching player warmups</dd>
+        <dt>7:00</dt>
+        <dd>Team Tunnel</dd>
+        <dt>7:00 - 9:30</dt>
+        <dd>NLL Colorado Mammoth vs. Buffalo Bandits</dd>
+        <dt>9:30 - 10:00</dt>
+        <dd>Meet Players on the field</dd>
+        <dt>10:00</dt>
+        <dd>Back to hotel, free time</dd>
+        <h3>Sunday January 19th</h3>
+        <dt>10:00 - 11:00</dt>
+        <dd>Clinic with 3-D Lacrosse</dd>
+        <dt>11:00 - 7:00</dt>
+        <dd>Fun bus with more lacrosse activities back to SLC</dd>
+
+      </dl>
+      <h4>Specific itinerary will be provided for each unique tour</h4>
+      <h4 id="warning" class="link_outline">Note: Not all items listed are guaranteed and are contingent on each unique tour.</h4>
+    </div>
+  </div>
+</div>
+<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>

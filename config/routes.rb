@@ -2,7 +2,7 @@ LacrosseTours::Application.routes.draw do
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
-
+  resources :itineraries
   # match 'sign_up' => 'sign_up#new', :as => 'sign_up', :via => :get
   # match 'sign_up' => 'sign_up#create', :as => 'sign_up', :via => :post
   root :to => 'static_pages#home'
@@ -11,7 +11,7 @@ LacrosseTours::Application.routes.draw do
 
   get "bus", to:"static_pages#bus", as: :bus
 
-  get "itinerary", to:"static_pages#itinerary", as: :itinerary
+  #get "itinerary", to:"itineraries#index ", as: :itinerary
 
   get "tour", to: "static_pages#tour", as: :tour
 

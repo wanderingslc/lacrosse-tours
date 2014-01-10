@@ -15,6 +15,7 @@
 //= require_tree .
 //= require bootstrap
 //= require jquery.backstretch
+//= require cocoon 
 
 $(document).ready(function(){
   var bg_image_div = $('#background-img');

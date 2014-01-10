@@ -1,13 +1,11 @@
-<h1><%= @itinerary.name %></h1>
+<h1><%= @itinerary.date %></h1>
 
-<dl class="">
-  <%= @itinerary.event_times.each do |event_time| %>
-    <dt><%= event_time.content %><dt>
-      <%= event_time.events.each do |event| %>
-        <dd><%= event.content %></dd>
-      <% end %>
+<dl class="dl-horizontal">
+  <% @itinerary.activities.each do |activity| %>
+    <dt><%= activity.time %><dt>
+    <dd><%= activity.description %></dd>   
   <% end %>
 </dl>
 
-<%= link_to 'Edit', edit_itinerary_path(@itineray) %>
-<%= link_to 'Back to Itineraries', itineray_path %>  
+<%= link_to 'Edit', edit_itinerary_path(@itinerary) %>
+<%= link_to 'Back to Itineraries', itineraries_path %>  

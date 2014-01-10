@@ -1,10 +1,10 @@
 class ItinerariesController < ApplicationController
   def index 
-    @itineray = Itineraries.all
+    @itineraries = Itinerary.all
   end
 
   def show 
-    @interary = Itineraries.find(params[:id])
+    @itinerary = Itinerary.find(params[:id])
   end
 
   def new 
@@ -12,9 +12,9 @@ class ItinerariesController < ApplicationController
   end
 
   def create 
-    @itinerary = Itinerary.new(params[:survey])
+    @itinerary = Itinerary.new(params[:itinerary])
     if @itinerary.save
-      redirect_to @itinerary, notice: "Successfulleraild  created itinerary"
+      redirect_to itineraries_path, notice: "Successfully  created itinerary"
     else 
       render :new 
     end
@@ -26,7 +26,7 @@ class ItinerariesController < ApplicationController
 
   def update 
       @itinerary = Itinerary.find(params[:id])
-      if @itinerary.update_attributes(params[:survey])
+      if @itinerary.update_attributes(params[:itinerary])
         redirect_to @itinerary, notice: "Successfully updated itinerary"
       else 
         render :edit

@@ -26,8 +26,11 @@
  
   <div id='background-img' data-imgpath="<%= asset_path('lacrosse_stick_head_color_medium_quality.jpg') %>" ></div>
   <div class="container">
-    <%= render 'layouts/navigation' %>
     
+    <%= render 'layouts/navigation' %>
+    <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
       <%= yield %>
   </div> 
  

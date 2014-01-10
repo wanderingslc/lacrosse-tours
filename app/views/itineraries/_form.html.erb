@@ -1,0 +1,15 @@
+<%= simple_form_for @itinerary do |f| %>
+  <%= f.input :date %>
+  <%= f.input :description %>
+  <h4>Activites for the day</h4>
+  <div id="activities">
+    <%= f.simple_fields_for :activities do |activity| %>
+      <%= render 'itineraries/activity_fields', :f => activity %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'Add Activity', f, :activities %>
+    </div>
+
+  </div>
+  <%= f.submit %>
+<% end %>
