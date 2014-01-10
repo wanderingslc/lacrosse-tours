@@ -75,4 +75,6 @@ LacrosseTours::Application.configure do
         enable_starttls_auto: true
 
     }
+
+    # devise config for production 
 end
