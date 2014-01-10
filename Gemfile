@@ -10,6 +10,7 @@ gem 'rails-i18n', '~> 3.0.0' # For 3.x
 
 gem 'pg'
 gem 'simple_form'
+gem 'cocoon'
 gem 'devise'
 gem 'figaro'
 gem 'backstretch-rails'

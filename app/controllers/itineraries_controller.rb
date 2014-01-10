@@ -14,7 +14,7 @@ class ItinerariesController < ApplicationController
   def create 
     @itinerary = Itinerary.new(params[:survey])
     if @itinerary.save
-      redirect_to @itinerary, notice: "Successfulle created itinerary"
+      redirect_to @itinerary, notice: "Successfulleraild  created itinerary"
     else 
       render :new 
     end
