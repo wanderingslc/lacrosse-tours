@@ -34,7 +34,9 @@
 
         <% @itineraries.each do |itinerary| %>
           <h3><%= itinerary.date %></h3>
+            <% if can? :update, @itinerary %>
               <%= link_to "Show Itinerary", itinerary %>
+            <% end %>  
               <p><%= itinerary.description %></p>
               <% itinerary.activities.each do |activity| %>
               <dt><%= activity.time %></dt>

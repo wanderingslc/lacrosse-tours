@@ -1,4 +1,7 @@
 class ItinerariesController < ApplicationController
+load_and_authorize_resource #:nested => :activity
+
+
   def index 
     @itineraries = Itinerary.all
   end
@@ -22,6 +25,7 @@ class ItinerariesController < ApplicationController
 
   def edit 
      @itinerary = Itinerary.find(params[:id])
+
    end
 
   def update 
