@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140113172043) do
+ActiveRecord::Schema.define(:version => 20140115180302) do
 
   create_table "activities", :force => true do |t|
     t.string   "time"
@@ -22,23 +22,6 @@ ActiveRecord::Schema.define(:version => 20140113172043) do
   end
 
   add_index "activities", ["itinerary_id"], :name => "index_activities_on_itinerary_id"
-
-  create_table "admin_areas", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "event_times", :force => true do |t|
-    t.string   "time"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "events", :force => true do |t|
-    t.text     "event"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
   create_table "itineraries", :force => true do |t|
     t.string   "date"
@@ -58,12 +41,6 @@ ActiveRecord::Schema.define(:version => 20140113172043) do
   add_index "roles", ["name", "resource_type", "resource_id"], :name => "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], :name => "index_roles_on_name"
 
-  create_table "tour_dates", :force => true do |t|
-    t.string   "date"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -77,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20140113172043) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
