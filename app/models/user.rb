@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  #include Authority::UserAbilities 
   rolify
   has_and_belongs_to_many :roles
   # Include default devise modules. Others available are:
@@ -10,4 +11,5 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
 end
