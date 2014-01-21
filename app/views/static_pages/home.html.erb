@@ -30,25 +30,55 @@
 
     <div class=" col-md-7 col-xs-12 " id="home_page_schedule" >
 
-      <% if @tour_date.scheduled == true %>
-        <% @tour_date.each do |scheduled| %>
-          <h3><%= scheduled.date %></h3>
-          <p><%= scheduled.description %></p>
+        <%  @tour_dates.each do |tour_date| %>
+          <% if tour_date.scheduled == true %>
+          <div style='border:1px solid blue;'>
+            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= tour_date.date %>
+                <%= tour_date.description %></li>
+            
+            <p>true test</p>
+          </div>
+          <% elsif tour_date.scheduled == false %>
+            <div style='border:1px solid red;'>
+            <h3><%= tour_date.date %></h3>
+            <p><%= tour_date.description %></p>
+            <p>false test</p>
+          </div>
           <% end %>
-      <% elsif @tour_date.scheduled == false %>    
-          <% @ptour_date.each do |pending| %>
-          <h3><%= pending.date %></h3>
-          <p><%= pending.description %></p>
-          <% end %>
-      <% end %>    
+        <% end %>      
+        
+
         <h3>Scheduled Tours</h3>
-        <ul>
+        <ul>  
+        <%  @tour_dates.each do |tour_date| %>
+          <% if tour_date.scheduled == true %>
+          <div style='border:1px solid blue;'>
+            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= link_to tour_date.date, itineraries_path %>
+                <%= tour_date.description %></li>
+            
+            <p>true test</p>
+          </div>
+          <% end %>
+        <% end %>  
+
+     
+        <h3>Scheduled Tours</h3>
+        
           <li><%= link_to 'February 1-2 : Colorado Mammoth vs. Minnesota Swarm AND D.U. Pioneers Scrimmage', itineraries_path, class: 'link_outline', rel: 'canonical' %> </li>
         </ul>
         
         <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path, class: 'link_outline', rel: 'canonical' %></h4>
+        <%= link_to 'New tour date', new_tour_dates_path %>
         <ul>
-         
+          <%  @tour_dates.each do |tour_date| %>
+          <% if tour_date.scheduled == false %>
+          <div style='border:1px solid red;'>
+            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= tour_date.date %>
+                <%= tour_date.description %></li>
+            <p> false test</p>
+          </div>
+          <% end %>
+          <% end %>
           <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 1-2  Colorado Mammoth vs. Rochester Knight Hawks</li>
           <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 24-25 Colorado Mammoth vs. Philadelphia Wings</li>
           <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March ?? Denver University schedule not currently out</li>
