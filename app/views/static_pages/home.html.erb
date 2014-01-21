@@ -30,7 +30,17 @@
 
     <div class=" col-md-7 col-xs-12 " id="home_page_schedule" >
 
-
+      <% if @tour_date.scheduled == true %>
+        <% @tour_date.each do |scheduled| %>
+          <h3><%= scheduled.date %></h3>
+          <p><%= scheduled.description %></p>
+          <% end %>
+      <% elsif @tour_date.scheduled == false %>    
+          <% @ptour_date.each do |pending| %>
+          <h3><%= pending.date %></h3>
+          <p><%= pending.description %></p>
+          <% end %>
+      <% end %>    
         <h3>Scheduled Tours</h3>
         <ul>
           <li><%= link_to 'February 1-2 : Colorado Mammoth vs. Minnesota Swarm AND D.U. Pioneers Scrimmage', itineraries_path, class: 'link_outline', rel: 'canonical' %> </li>

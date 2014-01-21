@@ -40,6 +40,6 @@ load_and_authorize_resource #:nested => :activity
   def destroy 
     @itinerary = Itinerary.find(params[:id])
     @itinerary.destroy
-    redirect_to itineries_url, notice: "Successfully destroyed itinerary"
+    redirect_to itineries_url, notice: "Successfully deleted itinerary"
   end
 end
