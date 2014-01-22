@@ -30,15 +30,16 @@
 
     <div class=" col-md-7 col-xs-12 " id="home_page_schedule" >
         <h3>Scheduled Tours</h3>
+        <%= link_to 'New tour date', new_tour_date_path if can? :create, TourDate %>
         <ul>  
         <%  @tour_dates.each do |tour_date| %>
           <% if tour_date.scheduled == true %>
-          <div style='border:1px solid blue;'>
+          <div >
             <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= link_to tour_date.date, itineraries_path %>
                 <%= tour_date.description %></li>
             
-            <p>true test</p>
-            <%= link_to "Edit Tour Date", tour_date %>
+           
+            <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate %>
           </div>
           <% end %>
         <% end %>  
@@ -50,14 +51,14 @@
         </ul>
         
         <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path, class: 'link_outline', rel: 'canonical' %></h4>
-        <%= link_to 'New tour date', new_tour_date_path %>
+        
         <ul>
           <%  @tour_dates.each do |tour_date| %>
           <% if tour_date.scheduled == false %>
-          <div style='border:1px solid red;'>
+          <div >
             <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= tour_date.date %>
                 <%= tour_date.description %></li>
-            <p> false test</p>
+            
           </div>
           <% end %>
           <% end %>
