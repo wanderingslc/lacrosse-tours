@@ -29,26 +29,6 @@
     </div>
 
     <div class=" col-md-7 col-xs-12 " id="home_page_schedule" >
-
-        <%  @tour_dates.each do |tour_date| %>
-          <% if tour_date.scheduled == true %>
-          <div style='border:1px solid blue;'>
-            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= tour_date.date %>
-                <%= tour_date.description %></li>
-            
-            <p>true test</p>
-          </div>
-          <% elsif tour_date.scheduled == false %>
-            <div style='border:1px solid red;'>
-            <h3><%= tour_date.date %></h3>
-            <p><%= tour_date.description %></p>
-            <p>false test</p>
-
-          </div>
-          <% end %>
-        <% end %>      
-        
-
         <h3>Scheduled Tours</h3>
         <ul>  
         <%  @tour_dates.each do |tour_date| %>

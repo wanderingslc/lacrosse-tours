@@ -27,9 +27,9 @@ class TourDatesController < ApplicationController
   end
 
   def update
-    @tour_date = TourDate.find(params[id])
+    @tour_date = TourDate.find(params[:id])
     if @tour_date.update_attributes(params[:tour_date])
-      redirect_to @tour_date, notice: "Successfully updated Tour Date"
+      redirect_to root_path, notice: "Successfully updated Tour Date"
     else
       render :edit
     end
