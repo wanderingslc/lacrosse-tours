@@ -43,6 +43,7 @@
             <h3><%= tour_date.date %></h3>
             <p><%= tour_date.description %></p>
             <p>false test</p>
+
           </div>
           <% end %>
         <% end %>      
@@ -57,6 +58,7 @@
                 <%= tour_date.description %></li>
             
             <p>true test</p>
+            <%= link_to "Edit Tour Date", tour_date %>
           </div>
           <% end %>
         <% end %>  
@@ -68,7 +70,7 @@
         </ul>
         
         <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path, class: 'link_outline', rel: 'canonical' %></h4>
-        <%= link_to 'New tour date', new_tour_dates_path %>
+        <%= link_to 'New tour date', new_tour_date_path %>
         <ul>
           <%  @tour_dates.each do |tour_date| %>
           <% if tour_date.scheduled == false %>
