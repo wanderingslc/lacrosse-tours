@@ -55,13 +55,11 @@
                    <%= tour_date.date %>
                     <%= tour_date.description %>
                 </li>
+                <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate %>
               </div>
             <% end %>
           <% end %>
-          <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 1-2  Colorado Mammoth vs. Rochester Knight Hawks</li>
-          <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 24-25 Colorado Mammoth vs. Philadelphia Wings</li>
-          <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March ?? Denver University schedule not currently out</li>
-          <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> April-August Colorado Outlaws schedule not currently out</li>
+          
         </ul>
       
       </div>

@@ -24,6 +24,7 @@ class TourDatesController < ApplicationController
 
   def edit
     @tour_date = TourDate.find(params[:id])
+    
   end
 
   def update

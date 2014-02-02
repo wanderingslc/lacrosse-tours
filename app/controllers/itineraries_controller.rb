@@ -26,7 +26,7 @@ load_and_authorize_resource #:nested => :activity
   def edit 
      @itinerary = Itinerary.find(params[:id])
 
-   end
+  end
 
   def update 
       @itinerary = Itinerary.find(params[:id])
