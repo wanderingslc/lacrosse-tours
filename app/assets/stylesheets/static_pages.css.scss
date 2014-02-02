@@ -14,7 +14,9 @@ body {
   }
 
 }
- 
+a  {
+  color: orange;
+} 
 //blanket container for all pages. be careful what goes here.
 .carousel .carousel-control {
   visibility: hidden;
@@ -152,6 +154,7 @@ body {
 
 }
 .link_outline {
+  color: yellow;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,

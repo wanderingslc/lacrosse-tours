@@ -55,7 +55,7 @@
                    <%= tour_date.date %>
                     <%= tour_date.description %>
                 </li>
-                <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate %>
+                <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate, class: 'link_outline' %>
               </div>
             <% end %>
           <% end %>
