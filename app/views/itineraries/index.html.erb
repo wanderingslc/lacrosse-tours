@@ -15,9 +15,6 @@
 
   <div class="col-md-6 col-xs-12">
     <div>
-      
-      <h1>Itinerary</h1>
-      <h2>This is the editable experimental form</h2>
       <ul>
         <li>Lacrosse <%= link_to "fun bus", bus_path, class: 'link_outline', rel: 'canonical' %> transport to and from SLC</li>
 
@@ -42,40 +39,11 @@
                 <dt><%= activity.time %></dt>
                 <dd><%= activity.description %></dd>
               <% end %>
-
         <% end %>  
          
         <%= link_to "New Itinerary", new_itinerary_path if can? :create, Itinerary %>    
 
-       <h3>Saturday January 18th</h3>
-
-        <dt>5:30 - 1:30</dt>
-        <dd>Lacrosse fun bus activities, ride to Denver</dd>
-        <dt>1:30 - 3:00</dt>
-        <dd>Lunch, Store Raffle, Retail Shopping, Player meet-n-greet at <%= link_to "Lacrosse Unlimited", 'http://lacrosseunlimited.com/', class: 'link_outline' %></dd>
-        <dt>3:00 - 4:30</dt>
-        <dd>Lacrosse Mfg. Tour, gear 101, Player meet-n-greet</dd>
-        <dt>4:30 - 5:30</dt>
-        <dd>Hotel Check-in and down time</dd>
-        <dt>5:30 - 6:15</dt>
-        <dd>On field activities at Mammoth Pepsi Center</dd>
-        <dt>6:15 - 7:00</dt>
-        <dd>Dinner and watching player warmups</dd>
-        <dt>7:00</dt>
-        <dd>Team Tunnel</dd>
-        <dt>7:00 - 9:30</dt>
-        <dd>NLL Colorado Mammoth vs. Buffalo Bandits</dd>
-        <dt>9:30 - 10:00</dt>
-        <dd>Meet Players on the field</dd>
-        <dt>10:00</dt>
-        <dd>Back to hotel, free time</dd>
-        <h3>Sunday January 19th</h3>
-        <dt>10:00 - 11:00</dt>
-        <dd>Clinic with 3-D Lacrosse</dd>
-        <dt>11:00 - 7:00</dt>
-        <dd>Fun bus with more lacrosse activities back to SLC</dd>
-
-      </dl>
+       
       <h4>Specific itinerary will be provided for each unique tour</h4>
       <h4 id="warning" class="link_outline">Note: Not all items listed are guaranteed and are contingent on each unique tour.</h4>
     </div>

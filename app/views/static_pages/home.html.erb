@@ -32,35 +32,31 @@
         <h3>Scheduled Tours</h3>
         <%= link_to 'New tour date', new_tour_date_path if can? :create, TourDate %>
         <ul>  
-        <%  @tour_dates.each do |tour_date| %>
-          <% if tour_date.scheduled == true %>
-          <div >
-            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= link_to tour_date.date, itineraries_path %>
-                <%= tour_date.description %></li>
-            
-           
-            <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate %>
-          </div>
-          <% end %>
-        <% end %>  
-
-     
-        <h3>Scheduled Tours</h3>
-        
-          <li><%= link_to 'February 1-2 : Colorado Mammoth vs. Minnesota Swarm AND D.U. Pioneers Scrimmage', itineraries_path, class: 'link_outline', rel: 'canonical' %> </li>
+          <%  @tour_dates.each do |tour_date| %>
+            <% if tour_date.scheduled == true %>
+            <div >
+              <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %>
+                  <%= link_to tour_date.date, itineraries_path, class: 'link_outline', rel: 'canonical' %>
+                  <%= tour_date.description %>
+                </li> 
+              <%= link_to "Edit Tour Date", tour_date if can? :edit, TourDate %>
+            </div>
+            <% end %>
+          <% end %>      
         </ul>
         
         <h4>Tour Dates to be scheduled, <%= link_to "Email with questions", contact_path, class: 'link_outline', rel: 'canonical' %></h4>
         
         <ul>
           <%  @tour_dates.each do |tour_date| %>
-          <% if tour_date.scheduled == false %>
-          <div >
-            <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %><%= tour_date.date %>
-                <%= tour_date.description %></li>
-            
-          </div>
-          <% end %>
+            <% if tour_date.scheduled == false %>
+              <div >
+                <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %>
+                   <%= tour_date.date %>
+                    <%= tour_date.description %>
+                </li>
+              </div>
+            <% end %>
           <% end %>
           <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 1-2  Colorado Mammoth vs. Rochester Knight Hawks</li>
           <li><%= image_tag '16px-Crossed_lacrosse_sticks.svg.png' %> March 24-25 Colorado Mammoth vs. Philadelphia Wings</li>
@@ -74,10 +70,7 @@
         <a class="twitter-timeline" href="https://twitter.com/SplitDodgeTours" data-widget-id="401101082752847872">Tweets by @SplitDodgeTours</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
-  </div>
-  
-
-  
+  </div>  
 </div>
 
 <script>
