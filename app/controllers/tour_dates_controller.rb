@@ -1,6 +1,6 @@
 class TourDatesController < ApplicationController
   load_and_authorize_resource
-
+  #before_filter :find_users, only: [:new, :edit, :create, :update, :destroy]
   def index 
     @tour_dates = TourDate.all
   end
@@ -15,6 +15,8 @@ class TourDatesController < ApplicationController
 
   def create
     @tour_date = TourDate.new(params[:tour_date])
+   
+    @tour_date.save 
     if @tour_date.save
       redirect_to root_path, notice: "Successfully created Tour Date"
     else

@@ -1,6 +1,5 @@
-<form class="form-horizontal" role="form">  
-  
-    <%= simple_form_for @tour_date do |f| %>
+
+    <%= simple_form_for(@tour_date) do |f| %>
       
       <%= f.input :date %>
       <br/>
@@ -9,8 +8,10 @@
       <br/>
       <%= f.input :scheduled, as: :boolean %>
       <br/>
+      <div class="form-actions">
       <%= f.button :submit %>
+      </div>
     <% end %>  
       
       
-</form>  
+ 
