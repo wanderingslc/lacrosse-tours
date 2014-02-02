@@ -1,6 +1,6 @@
 LacrosseTours::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :skip => [:registrations]
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
