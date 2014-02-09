@@ -12,6 +12,9 @@ load_and_authorize_resource #:nested => :activity
 
   def new 
     @itinerary = Itinerary.new 
+    1.times do 
+      activity = @itinerary.activities.build
+    end
   end
 
   def create 

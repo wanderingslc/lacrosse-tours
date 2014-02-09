@@ -1,60 +1,43 @@
 <div id="home" class="sign_up">
  
  
-  <div class= "left-column col-md-3 hidden-xs hidden-sm">
-    <div class="container ">
-       <%=render partial: "picture_carousel"  %>  
+    <div class= "left-column col-md-3 hidden-xs hidden-sm">
+      <div class="container ">
+         <%=render partial: "picture_carousel"  %>  
+      </div>
+    </div>
+
+    <div class="hidden-md hidden-lg ">
+       <p><%= image_tag ('split_dodge_logo_long.png'), class: 'img-responsive' %></p>
+    </div>
+
+    <div id="right-content">  
+      <div class="col-md-6 col-xs-12 ">
+      
+        <div id="wufoo-z15r3iud11dfyfa">
+          <p>Fill out my <a href="https://splitdodgetours.wufoo.com/forms/z15r3iud11dfyfa">online form</a>.</p>
+        </div>
+
+            <script type="text/javascript">var z15r3iud11dfyfa;(function(d, t) {
+
+            var s = d.createElement(t), options = {
+            'userName':'splitdodgetours', 
+            'formHash':'z15r3iud11dfyfa', 
+            'autoResize':true,
+            'height':'1768',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'show', 
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { z15r3iud11dfyfa = new WufooForm();z15r3iud11dfyfa.initialize(options);z15r3iud11dfyfa.display(); } catch (e) 
+            {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+                    
+      </div>          
     </div>
   </div>
-  <div class="hidden-md hidden-lg ">
-     <p><%= image_tag ('split_dodge_logo_long.png'), class: 'img-responsive' %></p>
-  </div>
-  <div id="right-content">  
-    <div class="col-md-6 col-xs-12 ">
-    
-    <div id="wufoo-z15r3iud11dfyfa">
-
-Fill out my <a href="https://splitdodgetours.wufoo.com/forms/z15r3iud11dfyfa">online form</a>.
-
-</div>
-
-<script type="text/javascript">var z15r3iud11dfyfa;(function(d, t) {
-
-var s = d.createElement(t), options = {
-
-'userName':'splitdodgetours', 
-
-'formHash':'z15r3iud11dfyfa', 
-
-'autoResize':true,
-
-'height':'1768',
-
-'async':true,
-
-'host':'wufoo.com',
-
-'header':'show', 
-
-'ssl':true};
-
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-
-s.onload = s.onreadystatechange = function() {
-
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-
-try { z15r3iud11dfyfa = new WufooForm();z15r3iud11dfyfa.initialize(options);z15r3iud11dfyfa.display(); } catch (e) 
-
-{}};
-
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-
-})(document, 'script');</script>
-        
-  </div>
-  
-
-    
-  
 </div>
